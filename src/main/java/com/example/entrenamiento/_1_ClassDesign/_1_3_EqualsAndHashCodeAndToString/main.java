@@ -1,4 +1,4 @@
-package com.example.entrenamiento._1_ClassDesign;
+package com.example.entrenamiento._1_ClassDesign._1_3_EqualsAndHashCodeAndToString;
 
 import java.util.HashSet;
 import java.util.Objects;
