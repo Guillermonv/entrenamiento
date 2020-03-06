@@ -1,6 +1,9 @@
 package com.example.entrenamiento._1_ClassDesign._1_2_Polimorfismo;
 
+import java.time.temporal.ValueRange;
+
 interface Peleador {
+
     public default  void entrenar (){
         System.out.println("PELEADOR ENTRENA");
     };
@@ -13,7 +16,8 @@ interface Peleador {
     }
 }
 
-class Boxeador implements Peleador{
+ class Boxeador implements Peleador{
+    public String attributo = "Valor";
 
     @Override
     public void pelear() {
@@ -30,6 +34,7 @@ class Karateka implements Peleador {
 }
 
 public class main {
+    String valor ="value";
     public static void main(String[] args) {
         Boxeador boxeador = new Boxeador();
         Karateka karateka = new Karateka();
