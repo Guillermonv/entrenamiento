@@ -1,5 +1,8 @@
 package com.example.entrenamiento._1_ClassDesign._1_6_FinalKeyword;
 
+//Las clases finales no se pueden extender
+//Los metodos finales no se puede sobreescribir
+//Las variables finales no pueden cambiar su valor una vez inicializadas
 public class main {
     final static int IVA = 10;
 
@@ -10,7 +13,7 @@ public class main {
 
         }
     }
-ngnex
+
     class Inner {
         Outter outter = new Outter();
 
