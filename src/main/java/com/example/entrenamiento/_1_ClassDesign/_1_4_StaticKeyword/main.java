@@ -7,12 +7,14 @@ class OutterClass {
         return valor;
     }
 
-     class inner {
+    class inner {
         int valor = 7;
     }
+
     {
-     System.out.println("Invocando clase");
+        System.out.println("Invocando clase");
     }
+
     static {
         System.out.println("Esto se ejecuta antes");
     }
@@ -25,9 +27,9 @@ class OutterClass {
 public class main {
     public static void main(String[] args) {
         OutterClass outterClass = new OutterClass();
-      //  OutterClass.print();
-      //System.out.println(outterClass.valor);
-       // OutterClass.inner inner = new OutterClass().new inner();
+        //OutterClass.print();
+        //System.out.println(outterClass.valor);
+        //OutterClass.inner inner = new OutterClass().new inner();
 
     }
 
