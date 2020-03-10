@@ -11,17 +11,21 @@ puede acceder a atriutos de la clase padre
 */
 
 class Persona {
-  private String name = "Juan";
-    private class Deporte{
-      String deporte = "Boxeo ";
-      void printNombreyDeporte(){
-          System.out.println("La persona  " + name + "practica el deporte " + deporte);
-      }
-  }
-  void getPersonayDeporte(){
+    private String name = "Juan";
+
+    private class Deporte {
+        int a;
+        String deporte = "Boxeo ";
+
+        void printNombreyDeporte() {
+            System.out.println("La persona  " + name + "practica el deporte " + deporte);
+        }
+    }
+
+    void getPersonayDeporte() {
         Deporte deporte = new Deporte();
         deporte.printNombreyDeporte();
-  }
+    }
 }
 
 /* Local clases
@@ -33,10 +37,11 @@ no tienen acceso a las variables locales a menos que sean finales
 
 class Outter {
     int valor = 10;
-    void operar(){
-         int valor2 = 10;
-        class mutiplicar{
-            void action(){
+
+    void operar() {
+        int valor2 = 10;
+        class mutiplicar {
+            void action() {
                 System.out.println("El resultado es " + valor2 * valor);
             }
         }
@@ -49,12 +54,14 @@ class Outter {
 requieren extender una clase o implementar una interfefaz
 pueden estar dentro de una metodo */
 class Compras {
-    abstract class ofertas{
-        void ofertasdePastas(){
+    abstract class ofertas {
+        void ofertasdePastas() {
             System.out.println("2x1 en pastas la abuela");
         }
+
         abstract void ofertasDeBebidas();
     }
+
     ofertas ofertaDelDia = new ofertas() {
         @Override
         void ofertasDeBebidas() {
@@ -69,8 +76,8 @@ la clase que contiene esta clase puede acceder a sus metodos o attributos sin ha
 */
 
 public class main {
-    static class ejemplo{
-        String user="USername";
+    static class ejemplo {
+        String user = "USername";
     }
 
     public static void main(String[] args) {
