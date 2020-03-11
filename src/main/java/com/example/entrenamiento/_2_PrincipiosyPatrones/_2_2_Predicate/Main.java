@@ -2,6 +2,7 @@ package com.example.entrenamiento._2_PrincipiosyPatrones._2_2_Predicate;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.BiPredicate;
 import java.util.function.Predicate;
 
 @FunctionalInterface
@@ -39,6 +40,10 @@ class Animal {
     }
 }
 
+@FunctionalInterface
+interface ClasificadorDeAnimales {
+    boolean chequear(Animal animal);
+}
 
 public class Main {
     static void clasificar(Animal animal, Predicate<Animal> clasificadorDeAnimales) {
@@ -55,17 +60,18 @@ public class Main {
 
         clasificar(new Animal("PEZ", true, false), //ANIMAL
                 animal -> animal.puedeNadar);//interfaz funcional
-        Predicate<Integer> filterlower = x -> x>2;
+        Predicate<Integer> filtrarMenores = x-> x>2;
         List<Integer> ints = Arrays.asList(1,2,3,4,5,6,7,8);
-        ints.stream().filter(filterlower).filter(new Predicate<Integer>() {
+        ints.stream().filter(filtrarMenores).filter(new Predicate<Integer>() {
             @Override
             public boolean test(Integer integer) {
-                return integer < 7;
+                return integer < 6;
 
             }
-        }).forEach(x-> System.out.println(x));
+        }).forEach(x -> System.out.println(x));
+        BiPredicate<String , String> validateEqulas = (a , b) -> a.equals(b);
+        
+        System.out.println(validateEqulas);
     }
-
-
 }
 
