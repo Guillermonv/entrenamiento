@@ -1,5 +1,8 @@
 package com.example.entrenamiento._1_ClassDesign._1_1_HerenciaComposicion;
 
+import java.util.HashMap;
+import java.util.Map;
+
 class Persona {
     String name;
 }
@@ -28,6 +31,11 @@ public class main {
     public static void main(String[] args) {
         Skills skills = new Skills();
         skills.render();
+        Map<String , String > map = new HashMap<>();
+        map.put("1","1");
+        map.put("2","2");
+        map.put("3","3");
+ 
 
     }
 }

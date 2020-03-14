@@ -1,4 +1,4 @@
-package com.example.entrenamiento._2_PrincipiosyPatrones.Singleton;
+package com.example.entrenamiento._2_PrincipiosyPatrones._2_4_Singleton;
 
 
 class Conexion {
