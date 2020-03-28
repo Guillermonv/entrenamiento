@@ -26,5 +26,7 @@ public class Main {
         nombresList.clear();
         nombresSet.clear();
 
+        List<String> asd = new ArrayList<>(10);
+        System.out.println(asd.size());
     }
 }

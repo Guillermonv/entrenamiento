@@ -42,7 +42,16 @@ public class Main {
         Main.valor<Integer> ints = new Main.valor<>();
         ints.setValor(1);
         List<Integer> list3 = new ArrayList<>();
- 
+
+        List<Integer> integerList = new ArrayList<>();
+        integerList.add(1);
+        integerList.add(2);
+        integerList.add(2);
+        integerList.add(3);
+        integerList.add(2);
+        System.out.println(integerList.set(3,1)); // en el indice 3 agrega el uno y retorna 3
+        integerList.add(1,4);// es un metodo void
+
     }
 
    static class valor<T>{
