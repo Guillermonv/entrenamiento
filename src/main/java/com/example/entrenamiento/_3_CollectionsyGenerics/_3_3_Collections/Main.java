@@ -28,5 +28,7 @@ public class Main {
 
         List<String> asd = new ArrayList<>(10);
         System.out.println(asd.size());
+
+
     }
 }
