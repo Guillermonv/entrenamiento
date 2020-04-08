@@ -1,5 +1,6 @@
 package com.example.entrenamiento._3_CollectionsyGenerics._3_5_SetAndTreeSet;
 
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
@@ -12,6 +13,7 @@ class Persona implements Comparable<Persona>{
         this.DNI = DNI;
         this.name = name;
     }
+
 
     @Override
     public String toString() {
@@ -30,6 +32,7 @@ class Persona implements Comparable<Persona>{
 public class Main {
 
     public static void main(String[] args) {
+
         Persona persona1 = new Persona(232,"Juan");
         Persona persona2 = new Persona(231,"Pedro");
         Persona persona3 = new Persona(239,"Maria");
@@ -54,7 +57,6 @@ public class Main {
         personaTreeSet.add(persona4);
         personaTreeSet.add(persona1);
         personaTreeSet.add(persona1);
-
         System.out.println("TREESET");
         personaTreeSet.stream().forEach(x-> System.out.println(x.toString()));
 

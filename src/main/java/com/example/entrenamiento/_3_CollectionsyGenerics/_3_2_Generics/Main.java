@@ -47,12 +47,18 @@ class Medicamento extends envio<Prioritario>{
 }
 
 public class Main {
+    static class Helper{
+        public static <U extends Exception> void printException(U u){
+            System.out.println(u.getMessage());
+        }
+    }
 
     public static void main(String[] args) {
             Producto<Celular,String> celularStringProducto = new Producto<>(new Celular(),"Nokia");
             celularStringProducto.envio(new Normal());
             Medicamento medicamento = new Medicamento();
             medicamento.envio(new Prioritario());
+            Helper.<NullPointerException>printException(new NullPointerException("Test"));
 
     }
 }
