@@ -1,8 +1,6 @@
-package com.example.entrenamiento._4_FunctionalProgramming._3_Streams;
+package com.example.entrenamiento._4_FunctionalProgramming._3_SteamsTerminalOperations;
 
 import java.util.*;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 class User {
