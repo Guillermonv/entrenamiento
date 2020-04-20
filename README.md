@@ -1,4 +1,4 @@
-Diseño de clases
+## Diseño de clases
 
 Herencia y composición
 
@@ -16,7 +16,7 @@ Enumeraciones
 
 Clases anidadas
 
-Principios y Patrones de diseño
+## Principios y Patrones de diseño
 
 Interfaces funcionales
 
@@ -30,7 +30,7 @@ Builder
 
 Factory
 
-Generics y colecciones
+## Generics y colecciones
 
 ArrayList / intro generics
 
@@ -50,7 +50,7 @@ Map
 
 Comparable y comparator
 
-Programación Funcional
+## Programación Funcional
 
 Supplier Consumer Predicate
 
