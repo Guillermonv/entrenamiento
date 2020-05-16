@@ -1,4 +1,4 @@
-package com.example.entrenamiento._5_DatesLocalization;
+package com.example.entrenamiento._5_DatesLocalization._2_LocaleResourceBoundle;
 
 import net.bytebuddy.asm.Advice;
 
@@ -31,6 +31,10 @@ public class Main {
         ResourceBundle resourceBundle = ResourceBundle.getBundle("application", Locale.CHINA);
         System.out.println(resourceBundle.getString("saludo"));
         System.out.println(resourceBundle.getString("contenido"));
+    }
+
+    static void incrementoneda (int moneda ){
+
     }
 }
 
