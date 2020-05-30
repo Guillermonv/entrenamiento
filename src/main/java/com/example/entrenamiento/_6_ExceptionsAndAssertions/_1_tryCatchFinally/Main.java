@@ -8,7 +8,7 @@ public class Main {
         //checked
         //System.out.println(1/0);
         // LocalDate localDate = LocalDate.of(2020,05,50);
-
+System.err.println("Dafuq");
         try {
             int valor = 2; // cambiar valor para acceder a differente flow
             if (valor == 0)
