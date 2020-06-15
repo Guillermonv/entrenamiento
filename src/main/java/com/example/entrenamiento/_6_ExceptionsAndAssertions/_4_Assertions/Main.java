@@ -6,6 +6,9 @@ public class Main {
      //   semaforo("Azul");
         assert getAnaulSalary(30000)==390000 : "Se esperaban 3900000 y se obtivieron" + getAnaulSalary(30000);
 
+
+        System.out.println("re");
+       
     }
     private static void semaforo(String color){
         switch (color){
