@@ -1,4 +1,7 @@
-package com.example.entrenamiento._7_Concurrency._1_Runnable;
+package com.example.entrenamiento._7_Concurrency._1_CreatingThreads;
+
+import java.util.ArrayList;
+import java.util.List;
 
 class proceso implements Runnable {
 
@@ -19,13 +22,14 @@ class proceso2 extends Thread {
 }
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         System.out.println("Comienzo");
         Thread thread1 = new Thread(new proceso());
         thread1.start();
 
         proceso2 thread2 = new proceso2();
         thread2.start();
+        List<Integer > as = new ArrayList<>();
 
         Runnable thread3 = ()->{
             for (int i = 21; i <=30 ; i++) {
