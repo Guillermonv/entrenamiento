@@ -66,13 +66,26 @@ Streams con valores primitivos
 
 ## Locale and Date DateTime and ZonedDateTime
 Date DateTime and ZonedDateTime
+
 Locale
 
 ## Exceptions and assertions
-Try catch
+Try catch 
+
 Try with resources
+
 Custom exceptions
+
 Assertions
+
+## Threads
+Crear Threads
+
+Threat sleep wait and Notify
+
+ExecutorService
+
+
 
 
 
