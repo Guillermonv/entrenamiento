@@ -1,4 +1,4 @@
-package com.example.entrenamiento._7_Concurrency.ExecutorService;
+package com.example.entrenamiento._7_Concurrency._3_ExecutorService;
 
 import java.util.concurrent.*;
 

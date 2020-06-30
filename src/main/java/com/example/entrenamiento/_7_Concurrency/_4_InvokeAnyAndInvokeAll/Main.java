@@ -1,4 +1,4 @@
-package com.example.entrenamiento._7_Concurrency._4_MultiThreading;
+package com.example.entrenamiento._7_Concurrency._4_InvokeAnyAndInvokeAll;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -33,13 +33,13 @@ public class Main {
         }
         List<Future<String>> futureList = executorService.invokeAll(callableList);
 
-        String future = executorService.invokeAny(callableList);
-        System.out.println(future);
-      /*  for (Future<String> future : futureList){
+        String Singlefuture = executorService.invokeAny(callableList);
+        System.out.println(Singlefuture);
+        for (Future<String> future : futureList){
             System.out.println("imprimiendo future "  + future.get());
         }
 
-       */
+
       executorService.shutdownNow();
     }
 }
