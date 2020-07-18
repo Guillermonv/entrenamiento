@@ -14,15 +14,16 @@ class Procesador {
         return i + 1;
     }
     Long procesarLista(List<Integer> integers){
+        //switch stram to paraletreams to see diferences on response time
         return integers.parallelStream().map(x->procesarDatos(x)).count();
     }
 }
 
 class Main  {
     public static void main(String[] args)  {
-      //  System.out.println(Runtime.getRuntime().availableProcessors());
+       System.out.println(Runtime.getRuntime().availableProcessors());
         List<String> animales = Arrays.asList("cocodrilo","perro","mono","zebra","leon");
-   //     animales.stream().parallel().forEachOrdered(System.out::println);
+         animales.stream().parallel().forEachOrdered(System.out::println);
 
   /*   animales.parallelStream().map(x->{
          System.out.println(x);
