@@ -4,6 +4,7 @@ import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.ForkJoinTask;
 import java.util.concurrent.RecursiveAction;
 import java.util.concurrent.RecursiveTask;
+import java.util.stream.Stream;
 
 class TransaccionAction extends RecursiveAction{
 int start;
@@ -30,7 +31,6 @@ int []pesos;
 
     }
 }
-
 
 class TransaccionTask extends RecursiveTask<Integer> {
     int start;
@@ -68,6 +68,10 @@ public class Main {
     //start forkjoin pool.inoke task
     public static void main(String[] args) {
         int[] pesos = {2000,12311,1299,15000,40000,500011,541211,77731};
+        Stream<String> stringStream = Stream.of("asd","qq","asd");
+
+        System.out.println(stringStream.reduce(0,(c1,c2)->c1+ c2.length(),
+                (s1,s2)->s1+s2).toString());
         ForkJoinTask<?> task = new TransaccionAction(0,5,pesos);
         ForkJoinPool pool = new ForkJoinPool();
         pool.invoke(task);
