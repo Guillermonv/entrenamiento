@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@master
       - uses: shallwefootball/s3-upload-action@master
         with:
-          aws_key_id: 'ASIASLBG62CDQO2WVJHV'
-          aws_secret_access_key: '3jxOnipnlwqSCMDi2qI8/pGE1MCk1qQbx4QlCl7l'
+          aws_key_id: ''
+          aws_secret_access_key: ''
           aws_bucket: 'test123'
           source_dir: '../../entrenamiento'
