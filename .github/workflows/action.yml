@@ -15,4 +15,4 @@ jobs:
           aws_key_id: 'ASIASLBG62CDQW6FZZNA'
           aws_secret_access_key: 'mbj+xivU7QcUe4k6p59uW7P14if3pk8DxJO02TrS'
           aws_bucket: 'test123'
-          source_dir: 'entrenamiento'
+          source_dir: '../../entrenamiento'
