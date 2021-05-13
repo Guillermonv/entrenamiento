@@ -6,20 +6,19 @@ on:
       - master
 
 jobs:
-  build:
-    name: Publish binaries
+  deploy:
     runs-on: ubuntu-latest
-
+    
     steps:
-    - uses: actions/checkout@v2
-    - name: Build
-      run: mvn clean install
-    - name: Upload binaries to release
-      uses: svenstaro/upload-release-action@v2
-      with:
-        repo_token: ${{ secrets.GITHUB_TOKEN }}
-        file: target/entrenamiento-0.0.1-SNAPSHOT.jar
-        asset_name: mything
-        tag: ${{ github.ref }}
-        overwrite: true
-        body: "This is my release text"
+     - uses: actions/checkout@master
+
+     - name: Upload file to bucket
+       uses: zdurham/s3-upload-github-action@master
+       with:
+         args: --acl public-read
+       env:
+        FILE: ./pom.xml
+        S3_BUCKET: 'test123'
+        S3_KEY: 'AKIASLBG62CDX4VHK546'
+        AWS_ACCESS_KEY_ID: 'ASIASLBG62CDQW6FZZNA'
+        AWS_SECRET_ACCESS_KEY: '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'
