@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build
-        run: mvn clean install
+        run: mvn clean install package
       - uses: actions/checkout@master
       - uses: shallwefootball/s3-upload-action@master
         with:
