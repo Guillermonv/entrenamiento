@@ -13,7 +13,7 @@ jobs:
       - name: Build
         run: mvn clean install package
       - name: Test
-        run: ls;pwd;echo "TTEST";find ./target -o -iname "*.jar"
+        run: ls;pwd;echo "TTEST";find ./target -iname "*.jar"
       - uses: actions/checkout@master
       - name: Upload file to bucket
         uses: zdurham/s3-upload-github-action@master
