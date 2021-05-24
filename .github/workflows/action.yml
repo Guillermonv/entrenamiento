@@ -13,7 +13,7 @@ jobs:
       - name: Build
         run: mvn clean install package
       - name: Test
-        run: ls
+        run: ls;pwd;
       - uses: actions/checkout@master
       - uses: shallwefootball/s3-upload-action@master
         with:
