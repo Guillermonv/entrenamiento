@@ -20,9 +20,8 @@ jobs:
         with:
           args: --acl public-read
         env:
-          run: echo"Blag";ls;pwd;
           #FILE: echo $JAR
-          FILE: ./target/entrenamiento-0.0.1-SNAPSHOT.jar
+          FILE: /home/runner/work/entrenamiento/entrenamiento/target/entrenamiento-0.0.1-SNAPSHOT.jar
           #FILE: ./pom.xml
           AWS_REGION: 'us-east-1'
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
